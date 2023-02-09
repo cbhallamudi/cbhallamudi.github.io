@@ -1,0 +1,219 @@
+:root{
+	--custom-primary-gold: #f8d110;
+	--custom-secondary-black: #0a0a0b;
+	--color-E3E3E3: #E3E3E3;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	letter-spacing: 0.3px;
+}
+
+body{
+	font-family: "Helvetica Neue", sans-serif !important;
+	font-size: max(0.9vmin,16px);
+}
+
+
+/* Common Classes start*/
+	
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1200px;
+	}
+
+	.custom-text-decoration-underline{
+		text-decoration: underline !important;
+	}
+	.custom-text-decoration-underline-hover:hover{
+		text-decoration: underline !important;
+	}
+
+	.font-weight-500{
+		font-weight: 500 !important;
+	}
+	.navbar-dark .navbar-nav .nav-link {
+		color: rgba(255,255,255,1);
+	}
+	.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+
+		color: var(--custom-primary-gold);
+	}
+
+	.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+		color: var(--custom-primary-gold);
+	}
+
+	.brand-logo-text{
+		font-size: 38px;
+	}
+
+	.fs-18{
+		font-size: 18px;
+	}
+	.fs-20{
+		font-size: 20px;
+	}
+
+	.i--1{
+		z-index: -1 !important;
+	}
+
+	.mt-20p{
+		margin-top: 20%;
+	}
+
+/* Common Classes end*/
+
+
+.text-custom-primary-gold{
+	color: var(--custom-primary-gold) !important;
+}
+.bg-custom-primary-gold{
+	background-color: var(--custom-primary-gold) !important;
+}
+
+.text-custom-secondary-black{
+	color: var(--custom-secondary-black) !important;
+}
+.bg-custom-secondary-black{
+	background-color: var(--custom-secondary-black) !important;
+}
+.text---color-E3E3E3{
+	color: var(--color-E3E3E3) !important;
+}
+.bg---color-E3E3E3{
+	background-color: var(--color-E3E3E3) !important;
+}
+.text-custom-black{
+	color: #000000 !important;
+}
+.bg-custom-black{
+	background-color: #000000 !important;
+}
+
+.btn {
+	padding: 8px 24px !important;
+	border-radius: 3px;
+	transition: all 0.3s !important;
+}
+
+.btn.bg-white:hover{
+	color: #FFF !important;
+	background-color: #1C1C1E !important;
+
+}
+
+.btn.bg-dark:hover {
+	color: #1C1C1E !important;
+	background-color: #FFF !important;
+}
+
+.tr-top-0{
+	top: 0 !important;
+} 
+
+.tr-top-10per{
+	top: 10% !important;
+} 
+.tr-left-0
+{
+	left: 0 !important;
+} 
+.tr-left-25
+{
+	left: 25% !important;
+}
+/*=========== Header Banner ===========*/
+
+.tradereplay-banner-container {
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 22px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tradereplay-banner-text {
+	
+	font-size: 20px !important;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
+/*===========Header sectio start============*/
+
+	.header-section-content-container{
+		height: 100vh;
+	}
+
+	/*.header-section-content-container  .container{
+		background-image: url("../images/header-bg-image.jpg");
+		background-size: 100% 100%;
+		background-position: bottom !important;
+		background-repeat: no-repeat;
+	}*/
+
+
+	.tradereplay-header-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 100px 30px 50px 30px;
+		flex-direction: column;
+	}
+
+	.tradereplay-header-container > *{
+		margin-bottom: 25px;
+	}
+
+	.header-section-content-heading {
+		font-size: 72px;
+		font-weight: bold;
+		font-style: normal;
+		line-height: 86px;
+		color: transparent;
+		background: linear-gradient(45deg, #FBC419, #CB72FE, #48DEFF 100%);
+		background-clip: text;
+		text-align: center;
+		width: 75%;
+		margin-bottom: 20px;
+	}
+
+	.header-section-content-text {
+		width: 50%;
+		text-align: center;
+		color: #FFFFFF;
+		font-family: "Helvetica Neue", Sans-serif;
+		font-size: 28px;
+		font-weight: 400;
+		font-style: normal;
+		line-height: 36px;
+		margin-bottom: 20px;
+	}
+
+/*===========Header sectio start============*/
+
+/*=========About Start===========*/
+	.about-icon-container{
+		height: 60px;
+		width: 130px !important;
+		margin-right: 15px;
+		border-radius: 50%;
+		/*display: flex;
+		justify-content: center;
+		align-items: center;*/
+		background: linear-gradient(45deg, #FBC419, #CB72FE, #48DEFF 100%);
+		padding: 1px;
+	}
+
+	.about-icon-container > div{
+		border-radius: 50%;
+	}
+
+/*=========About End===========*/
