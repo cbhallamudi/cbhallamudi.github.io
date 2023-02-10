@@ -20,7 +20,7 @@
 
 body{
 /*	font-family: "Helvetica Neue", sans-serif !important;*/
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: "Helvetica Neue", sans-serif !important;
 	font-size: max(0.9vmin,16px);
 	letter-spacing: 0.3px;
 }
@@ -130,14 +130,14 @@ body{
 
 	.discord-section-heading {
 		color: #FFFFFF;
-		font-family: "Helvetica Neue", Sans-serif;
+		
 		font-size: 26px;
 		font-weight: 600;
 	}
 
 	.discord-section-text{
 		color: #E1E1E1;
-		font-family: "Helvetica Neue", Sans-serif;
+		
 		font-size: 19px;
 		font-weight: 500;
 	}
@@ -262,7 +262,7 @@ body{
 		margin-bottom: 25px;
 	}
 
-	.header-section-content-heading {
+	.community-section-content-heading, .header-section-content-heading {
 		font-size: 72px;
 		font-weight: bold;
 		font-style: normal;
@@ -279,7 +279,7 @@ body{
 		width: 50%;
 		text-align: center;
 		color: #FFFFFF;
-		font-family: "Helvetica Neue", Sans-serif;
+		
 		font-size: 28px;
 		font-weight: 400;
 		font-style: normal;
@@ -350,3 +350,11 @@ body{
 }
 
 /*======= Get Started End =============*/
+
+/*======== Community started ==========*/
+
+	.community-section-content-heading{
+		font-size: 64px !important;
+	}
+
+/*======== Community ended ============*/
