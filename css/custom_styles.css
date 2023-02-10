@@ -6,6 +6,7 @@
 	--custom-black: #000000;
 	--custom-black-2: #1a1a1a;
 	--color-E3E3E3: #E3E3E3;
+	--color-discord: #4F71F9;
 }
 
 
@@ -74,6 +75,10 @@ body{
 		z-index: -1 !important;
 	}
 
+	.mt-10p{
+		margin-top: 10%;
+	}
+
 	.mt-20p{
 		margin-top: 20%;
 	}
@@ -94,6 +99,12 @@ body{
 	.pr-70px{
 		padding-right: 70px;
 	}
+	.pl-150px{
+		padding-left: 150px;
+	}
+	.pr-150px{
+		padding-right: 150px;
+	}
 
 	.p-120tb-30lr{
 		padding: 120px 30px;
@@ -110,8 +121,38 @@ body{
 		padding: 100px 30px 100px 30px;
 	}
 
+	.custom-light-text{
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 28px;
+		color: var(--color-E3E3E3);
+	}
+
+	.discord-section-heading {
+		color: #FFFFFF;
+		font-family: "Helvetica Neue", Sans-serif;
+		font-size: 26px;
+		font-weight: 600;
+	}
+
+	.discord-section-text{
+		color: #E1E1E1;
+		font-family: "Helvetica Neue", Sans-serif;
+		font-size: 19px;
+		font-weight: 500;
+	}
+
+	.discord-section{
+		padding: 45px 0px 40px 0px;
+		border-radius: 20px;
+	}
+
 /* Common Classes end*/
 
+
+.bg-discord-section{
+	background-color: var(--color-discord);
+}
 
 .text-custom-primary-gold{
 	color: var(--custom-primary-gold) !important;
@@ -301,6 +342,7 @@ body{
 	box-shadow: -1px 0px 50px 3px rgba(248, 209, 16, 0.3);
 	transition: transform 0.3s;
 }
+
 
 
 .get-started-img:hover{
