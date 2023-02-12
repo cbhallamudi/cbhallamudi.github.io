@@ -83,6 +83,9 @@ body{
 		margin-top: 20%;
 	}
 
+	.mb-30px{
+		margin-bottom: 30px;
+	}
 	.mb-50px{
 		margin-bottom: 50px;
 	}
@@ -96,13 +99,13 @@ body{
 	.pl-70px{
 		padding-left: 70px;
 	}
-	.pr-70px{
+	.pr-lg-70px{
 		padding-right: 70px;
 	}
 	.pl-150px{
 		padding-left: 150px;
 	}
-	.pr-150px{
+	.pr-lg-150px{
 		padding-right: 150px;
 	}
 
@@ -110,6 +113,9 @@ body{
 		padding: 120px 30px;
 	}
 
+	.min-ht-50vh{
+		min-height: 50vh !important;
+	}
 	.min-ht-100vh{
 		min-height: 100vh !important;
 	}
@@ -145,6 +151,18 @@ body{
 	.discord-section{
 		padding: 45px 0px 40px 0px;
 		border-radius: 20px;
+	}
+
+	#subscriptionEmail{
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.subscriptionButton{
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
 	}
 
 /* Common Classes end*/
@@ -190,6 +208,7 @@ body{
 	padding: 8px 24px !important;
 	border-radius: 3px;
 	transition: all 0.3s !important;
+	height: calc(1.5em + .75rem + 2px);
 }
 
 .btn.bg-white:hover{
@@ -201,6 +220,10 @@ body{
 .btn.bg-dark:hover {
 	color: #1C1C1E !important;
 	background-color: #FFF !important;
+}
+
+.boder-custom-primary-gold{
+	border-color: var(--custom-primary-gold) !important;
 }
 
 .tr-top-0{
@@ -220,7 +243,7 @@ body{
 }
 /*=========== Header Banner ===========*/
 
-.tradereplay-banner-container {
+.tradereplay-community-container,.tradereplay-banner-container {
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
@@ -322,7 +345,7 @@ body{
 /*======= founder statement start =====*/
 	.founder-statement-text {
 		line-height: 64px;
-		letter-spacing: -3px;
+		letter-spacing: -0.16px;
 		text-align: justify;
 		text-align-last: center;
 	}
@@ -352,9 +375,118 @@ body{
 /*======= Get Started End =============*/
 
 /*======== Community started ==========*/
+	.tradereplay-community-container{
+		flex-direction: column !important;
+	}
 
 	.community-section-content-heading{
 		font-size: 64px !important;
 	}
 
+
+
+.item_container{
+	background-color: #000000;
+	border-radius: 12px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #383838;
+	margin: 10px 15px;
+}
+
+.item_container > .card > i.position-absolute{
+	top: 10%;
+	right: 1%;
+	color: #38efff;
+	font-size: 24px;
+}
+
+.item_container .card-body{
+	padding: 0;
+}
+
+.item_container .card-text, .item_container .card-title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: -0.16px;
+	color: #FFFFFF;
+	margin: 0;
+}
+
+.item_container .card-subtitle {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: -0.16px;
+	color: #C4C4C4;
+	margin: 0;
+}
+
+.item_container .card-text{
+	font-weight: 400;
+	margin-bottom: 15px;
+}
 /*======== Community ended ============*/
+
+/*========== Footer Starts============*/
+
+.footer-common-text{
+	text-align: left;
+	color: #C4C4C4;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 19px;
+}
+
+.copyright-text {
+	text-align: left;
+	color: #C4C4C4;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 19px;
+}
+
+.footer-list-heading {
+	color: #686868;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 20px;
+}
+
+.footer-list-link {
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 20px;
+}
+
+.footer-social-link{
+
+}
+
+.footer-social-link .fa-twitter:hover{
+	color: #38efff;
+}
+.footer-social-link .fa-facebook:hover{
+	color: #1655d2;
+}
+.footer-social-link .fa-youtube:hover{
+	color: #ff0000;
+}
+.footer-social-link .fa-linkedin:hover{
+	color: #0f44a0;
+}
+.footer-social-link .fa-instagram:hover{
+	color: transparent;
+	background: linear-gradient(to right, #c32aa3,#4c5fd7,#7232bd,#f46f30,#ffdc7d);
+	background-clip: text !important;
+}
+
+/*========== Footer Ends==============*/

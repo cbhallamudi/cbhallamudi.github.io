@@ -6,12 +6,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Home - Trade Replay </title>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<link rel="stylesheet" href="./css/custom_styles.css">
+	<link rel="stylesheet" href="./css/media_queries.css">
 </head>
 <body>
 
-	<div class="container-fluid bg-custom-primary-gold">
+	<section class="container-fluid bg-custom-primary-gold">
 		<div class="container">
 		  <div class="row">
 		    <div class="col-12 tradereplay-banner-container">
@@ -19,50 +22,49 @@
 		    </div>
 		  </div>
 		</div>  
-	</div>
-		<div class="container-fluid p-0 sticky-top bg-custom-secondary-black">
-			<nav class="navbar navbar-expand-lg navbar-dark container">
-			   <a class="navbar-brand" href="#"><i class="fa-solid fa-trademark fa-2x text-custom-primary-gold"></i> <span class="brand-logo-text">Logo</span></a>
-			    <!-- <a class="navbar-brand" href="#">
-			     <img src="bird.jpg" alt="Logo" style="width:40px;">
-			   </a> -->
-			  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			  	    <span class="navbar-toggler-icon"></span>
-			  	  </button>
-			  	  <div class="collapse navbar-collapse" id="navbarNav">
-			  	    <ul class="navbar-nav ml-auto">
-			  	      <li class="nav-item mx-2 active">
-			  	        <a class="nav-link text-capitalize font-weight-500" href="#">Features <span class="sr-only">(current)</span></a>
-			  	      </li>
-			  	      <li class="nav-item mx-2">
-			  	        <a class="nav-link text-capitalize font-weight-500" href="#">Pricing</a>
-			  	      </li>
-			  	      <li class="nav-item mx-2">
-			  	        <a class="nav-link text-capitalize font-weight-500" href="#">customers</a>
-			  	      </li>
-			  	      <li class="nav-item mx-2">
-			  	        <a class="nav-link text-capitalize font-weight-500" href="#">blog</a>
-			  	      </li>
-			  	      <li class="nav-item mx-2">
-			  	        <a class="nav-link text-capitalize font-weight-500" href="#">discord</a>
-			  	      </li>
-			  	      <li class="nav-item mx-2">
-			  	        <a class="btn bg-white text-custom-secondary-black text-capitalize font-weight-500" href="#">start trial</a>
-			  	      </li>
-			  	      <li class="nav-item mx-2">
-			  	        <a class="btn bg-dark text-white text-capitalize font-weight-500" href="#">login</a>
-			  	      </li>
-			  	    </ul>
-			  	  </div>
-			</nav>
-		</div>
-	
-	<div class="container-fluid bg-custom-black">
+	</section>
+	<section class="container-fluid p-0 sticky-top bg-custom-secondary-black">
+		<nav class="navbar navbar-expand-lg navbar-dark container">
+		   <a class="navbar-brand" href="#"><i class="fa-solid fa-trademark fa-2x text-custom-primary-gold"></i> <span class="brand-logo-text">Logo</span></a>
+		    <!-- <a class="navbar-brand" href="#">
+		     <img src="bird.jpg" alt="Logo" style="width:40px;">
+		   </a> -->
+		  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  	    <span class="navbar-toggler-icon"></span>
+		  	  </button>
+		  	  <div class="collapse navbar-collapse" id="navbarNav">
+		  	    <ul class="navbar-nav ml-auto">
+		  	      <li class="nav-item mx-2 active">
+		  	        <a class="nav-link text-capitalize font-weight-500" href="#">Features <span class="sr-only">(current)</span></a>
+		  	      </li>
+		  	      <li class="nav-item mx-2">
+		  	        <a class="nav-link text-capitalize font-weight-500" href="#">Pricing</a>
+		  	      </li>
+		  	      <li class="nav-item mx-2">
+		  	        <a class="nav-link text-capitalize font-weight-500" href="#">customers</a>
+		  	      </li>
+		  	      <li class="nav-item mx-2">
+		  	        <a class="nav-link text-capitalize font-weight-500" href="#">blog</a>
+		  	      </li>
+		  	      <li class="nav-item mx-2">
+		  	        <a class="nav-link text-capitalize font-weight-500" href="#">discord</a>
+		  	      </li>
+		  	      <li class="nav-item mx-2">
+		  	        <a class="btn bg-white text-custom-secondary-black text-capitalize font-weight-500" href="#">start trial</a>
+		  	      </li>
+		  	      <li class="nav-item mx-2">
+		  	        <a class="btn bg-dark text-white text-capitalize font-weight-500" href="#">login</a>
+		  	      </li>
+		  	    </ul>
+		  	  </div>
+		</nav>
+	</section>
+	<header class="container-fluid bg-custom-black">
 		<div class="container custom-container-padding">
 				<div class="row">
 				    <div class="col-12">
 				    	
-				    	<div class="w-100 position-absolute mb-4 tr-top-10per d-flex justify-content-center align-items-center flex-column">
+				    	<div class="w-100 position-absolute mb-4 d-flex justify-content-start align-items-center flex-column">
 				    		<h1 class="header-section-content-heading">
 				    		Lorem ipsum dolor sit amet consectetur
 					    	</h1>
@@ -79,7 +81,7 @@
 					    		</a>
 					    	</div>
 				    	</div>
-				    	<img src="./images/header-bg-image.jpg" class="w-100 mt-20p" alt="">
+				    	<img src="./images/header-bg-image.jpg" class="w-100 mt-10p" alt="">
 				    </div>
 				    <div class="row">
 				    	<div class="col-md-4 d-flex justify-content-center align-items-start">
@@ -120,10 +122,8 @@
 				    </div>
 			  	</div>
 		</div>
-	</div>	
-
-
-	<div class="container-fluid bg-custom-black min-ht-100vh">
+	</header>	
+	<section class="container-fluid bg-custom-black min-ht-100vh">
 		<div class="container custom-container-padding">
 			<div class="row">
 				<div class="col-12 mb-125px">
@@ -132,7 +132,7 @@
 			</div>
 			<div class="row mb-100px">
 				<div class="col-lg-6">
-					<div class="d-flex flex-column justify-content-center w-100 h-100 pr-70px">
+					<div class="d-flex flex-column justify-content-center w-100 h-100 pr-lg-70px">
 						<h3 class="fs-32 text-white font-weight-bold">Lorem ipsum <span class="text-custom-primary-gold">dolor</span></h3>
 						<p class="custom-light-text">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Commodi incidunt praesentium enim. Incidunt omnis inventore harum, ipsam ducimus nulla dignissimos, repudiandae minima neque. Ullam, animi.</p>
 						<a href="javascript:void(0);" class="text-white font-weight-bold fs-18"><span class="mr-2">Learn more</span><i class="fa-solid fa-arrow-right"></i></a>
@@ -161,7 +161,7 @@
 			</div>
 			<div class="row mb-100px">
 				<div class="col-lg-6">
-					<div class="d-flex flex-column justify-content-center w-100 h-100 pr-70px">
+					<div class="d-flex flex-column justify-content-center w-100 h-100 pr-lg-70px">
 						<h3 class="fs-32 text-white font-weight-bold">Lorem ipsum <span class="text-custom-primary-gold">dolor</span></h3>
 						<p class="custom-light-text">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Commodi incidunt praesentium enim. Incidunt omnis inventore harum, ipsam ducimus nulla dignissimos, repudiandae minima neque. Ullam, animi.</p>
 						<!-- <a href="javascript:void(0);" class="text-white font-weight-bold fs-18"><span class="mr-2">Learn more</span><i class="fa-solid fa-arrow-right"></i></a> -->
@@ -191,13 +191,12 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="container-fluid bg-custom-black-2">
+	</section>
+	<section class="container-fluid bg-custom-black-2">
 		<div class="container p-120tb-30lr">
 			<div class="row">
 				<div class="col-12 mb-50px">
-					<h2 class="text-white fs-46 font-weight-500 founder-statement-text">Lorem ipsum dolor Recusandae consectetur adipisicing. Recusandae, magnam? Accusantium asperiores Recusandae praesentium tenetur, Recusandae nisi Recusandae provident Recusandae voluptatum voluptate blanditiis.</h2>
+					<h2 class="text-white fs-32 font-weight-500 founder-statement-text">Lorem ipsum dolor Recusandae consectetur adipisicing. Recusandae, magnam? Accusantium asperiores Recusandae praesentium tenetur, Recusandae nisi Recusandae provident Recusandae voluptatum voluptate blanditiis.</h2>
 
 					<div class="w-100 d-flex mt-4">
 						<figure class="rounded-circle founder-statement-img-container">
@@ -205,21 +204,20 @@
 							<i class="fa-regular fa-circle-user fa-4x text-custom-primary-gold"></i>
 							</div>
 						</figure>
-						<div class="d-flex justify-content-center align-items-center flex-column ml-lg-4">
+						<div class="d-flex justify-content-center align-items-start flex-column ml-lg-4">
 							<h4 class="fs-20 font-weight-500 text-white">User name</h4>
-							<p class="custom-light-text">Role</p>
+							<p class="custom-light-text">Role / designation</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="container-fluid bg-custom-black min-ht-100vh">
+	</section>
+	<section class="container-fluid bg-custom-black min-ht-100vh">
 		<div class="container custom-container-padding">
 			<div class="row">
 				<div class="col-lg-6">
-					<div class="w-100 h-100 d-flex flex-column justify-content-start align-items-start pr-150px">
+					<div class="w-100 h-100 d-flex flex-column justify-content-start align-items-start pr-lg-150px">
 						<h2 class="get-started-heading mb-4">
 							Lorem ipsum dolor sit amet consectetur elit
 						</h2>
@@ -269,9 +267,8 @@
 				</div>
 			</div>
 		</div>		
-	</div>
-
-	<div class="container-fluid bg-custom-black">
+	</section>
+	<section class="container-fluid bg-custom-black">
 		<div class="container custom-container-padding">
 			<div class="row bg-discord-section discord-section">
 				<div class="col-7">
@@ -296,24 +293,293 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid bg-custom-black">
+	</section>
+	<section class="container-fluid bg-custom-black">
 		<div class="container">
 		  <div class="row">
-		    <div class="col-12 tradereplay-banner-container">
-		    	<h1 class="community-section-content-heading">
+		    <div class="col-12 tradereplay-community-container">
+		    	<h1 class="community-section-content-heading mb-4">
 	    			Community
 		    	</h1>
+		    	<a href="javascript:void(0);" class="text-white font-weight-bold fs-18 mb-4">
+		    		<span class="mr-2">
+		    			Lorem, ipsum dolor sit
+		    		</span>
+		    		<i class="fa-solid fa-arrow-right"></i>
+		    	</a>
+		    </div>
+		    <div class="col-12">
+		    	<div class="community_slider mb-30px">
+		    		<!-- <img data-lazy="./images/get-started-image-1.jpg"/> -->
+		    	  	<a href="javascript:void(0);" class="text-decoration-none item_container">
+		    	  		<div class="card position-relative bg-transparent">
+		    	  			<i class="fa-brands fa-twitter position-absolute"></i>
+		    	  		  <div class="card-body">
+			    	  		<div class="d-flex justify-content-start align-items-center">    
+			    	  		    <figure class="rounded-circle w-25 h-25 border boder-custom-primary-gold mr-3">
+			    	  		    	<img src="./images/sample_avatar.png" alt="" class="rounded-circle img-fluid">
+			    	  		    </figure>
+			    	  		    <div>
+			    	  		    	<h5 class="card-title">User</h5>
+			    	  		    	<h6 class="card-subtitle mb-2 text-muted">Social link</h6>
+			    	  		    </div>
+			    	  		</div>    
+		    	  		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    	  		    <p class="text-custom-primary-gold">
+		    	  		    	<script>
+		    	  		    		
+		    	  		    		    var maxDate = Date.now();
+		    	  		    		    var timestamp = Math.floor(Math.random() * maxDate);
+		    	  		    		    document.write(new Date(timestamp).toString().substring(0,24));
+		    	  		    	</script>	
+		    	  		    </p>
+		    	  		  </div>
+		    	  		</div>
+		    	  	</a>
+		    	  <a href="javascript:void(0);" class="text-decoration-none item_container">
+		    	  		<div class="card position-relative bg-transparent">
+		    	  			<i class="fa-brands fa-twitter position-absolute"></i>
+		    	  		  <div class="card-body">
+			    	  		<div class="d-flex justify-content-start align-items-center">    
+			    	  		    <figure class="rounded-circle w-25 h-25 border boder-custom-primary-gold mr-3">
+			    	  		    	<img src="./images/sample_avatar.png" alt="" class="rounded-circle img-fluid">
+			    	  		    </figure>
+			    	  		    <div>
+			    	  		    	<h5 class="card-title">User</h5>
+			    	  		    	<h6 class="card-subtitle mb-2 text-muted">Social link</h6>
+			    	  		    </div>
+			    	  		</div>    
+		    	  		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    	  		    <p class="text-custom-primary-gold">
+		    	  		    	<script>
+		    	  		    		
+		    	  		    		    var maxDate = Date.now();
+		    	  		    		    var timestamp = Math.floor(Math.random() * maxDate);
+		    	  		    		    document.write(new Date(timestamp).toString().substring(0,24));
+		    	  		    	</script>	
+		    	  		    </p>
+		    	  		  </div>
+		    	  		</div>
+		    	  	</a>
+		    	  <a href="javascript:void(0);" class="text-decoration-none item_container">
+		    	  		<div class="card position-relative bg-transparent">
+		    	  			<i class="fa-brands fa-twitter position-absolute"></i>
+		    	  		  <div class="card-body">
+			    	  		<div class="d-flex justify-content-start align-items-center">    
+			    	  		    <figure class="rounded-circle w-25 h-25 border boder-custom-primary-gold mr-3">
+			    	  		    	<img src="./images/sample_avatar.png" alt="" class="rounded-circle img-fluid">
+			    	  		    </figure>
+			    	  		    <div>
+			    	  		    	<h5 class="card-title">User</h5>
+			    	  		    	<h6 class="card-subtitle mb-2 text-muted">Social link</h6>
+			    	  		    </div>
+			    	  		</div>    
+		    	  		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    	  		    <p class="text-custom-primary-gold">
+		    	  		    	<script>
+		    	  		    		
+		    	  		    		    var maxDate = Date.now();
+		    	  		    		    var timestamp = Math.floor(Math.random() * maxDate);
+		    	  		    		    document.write(new Date(timestamp).toString().substring(0,24));
+		    	  		    	</script>	
+		    	  		    </p>
+		    	  		  </div>
+		    	  		</div>
+		    	  	</a>
+		    	  <a href="javascript:void(0);" class="text-decoration-none item_container">
+		    	  		<div class="card position-relative bg-transparent">
+		    	  			<i class="fa-brands fa-twitter position-absolute"></i>
+		    	  		  <div class="card-body">
+			    	  		<div class="d-flex justify-content-start align-items-center">    
+			    	  		    <figure class="rounded-circle w-25 h-25 border boder-custom-primary-gold mr-3">
+			    	  		    	<img src="./images/sample_avatar.png" alt="" class="rounded-circle img-fluid">
+			    	  		    </figure>
+			    	  		    <div>
+			    	  		    	<h5 class="card-title">User</h5>
+			    	  		    	<h6 class="card-subtitle mb-2 text-muted">Social link</h6>
+			    	  		    </div>
+			    	  		</div>    
+		    	  		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    	  		    <p class="text-custom-primary-gold">
+		    	  		    	<script>
+		    	  		    		
+		    	  		    		    var maxDate = Date.now();
+		    	  		    		    var timestamp = Math.floor(Math.random() * maxDate);
+		    	  		    		    document.write(new Date(timestamp).toString().substring(0,24));
+		    	  		    	</script>	
+		    	  		    </p>
+		    	  		  </div>
+		    	  		</div>
+		    	  	</a>
+		    	  <a href="javascript:void(0);" class="text-decoration-none item_container">
+		    	  		<div class="card position-relative bg-transparent">
+		    	  			<i class="fa-brands fa-twitter position-absolute"></i>
+		    	  		  <div class="card-body">
+			    	  		<div class="d-flex justify-content-start align-items-center">    
+			    	  		    <figure class="rounded-circle w-25 h-25 border boder-custom-primary-gold mr-3">
+			    	  		    	<img src="./images/sample_avatar.png" alt="" class="rounded-circle img-fluid">
+			    	  		    </figure>
+			    	  		    <div>
+			    	  		    	<h5 class="card-title">User</h5>
+			    	  		    	<h6 class="card-subtitle mb-2 text-muted">Social link</h6>
+			    	  		    </div>
+			    	  		</div>    
+		    	  		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    	  		    <p class="text-custom-primary-gold">
+		    	  		    	<script>
+		    	  		    		
+		    	  		    		    var maxDate = Date.now();
+		    	  		    		    var timestamp = Math.floor(Math.random() * maxDate);
+		    	  		    		    document.write(new Date(timestamp).toString().substring(0,24));
+		    	  		    	</script>	
+		    	  		    </p>
+		    	  		  </div>
+		    	  		</div>
+		    	  	</a>
+		    	  <a href="javascript:void(0);" class="text-decoration-none item_container">
+		    	  		<div class="card position-relative bg-transparent">
+		    	  			<i class="fa-brands fa-twitter position-absolute"></i>
+		    	  		  <div class="card-body">
+			    	  		<div class="d-flex justify-content-start align-items-center">    
+			    	  		    <figure class="rounded-circle w-25 h-25 border boder-custom-primary-gold mr-3">
+			    	  		    	<img src="./images/sample_avatar.png" alt="" class="rounded-circle img-fluid">
+			    	  		    </figure>
+			    	  		    <div>
+			    	  		    	<h5 class="card-title">User</h5>
+			    	  		    	<h6 class="card-subtitle mb-2 text-muted">Social link</h6>
+			    	  		    </div>
+			    	  		</div>    
+		    	  		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    	  		    <p class="text-custom-primary-gold">
+		    	  		    	<script>
+		    	  		    		
+		    	  		    		    var maxDate = Date.now();
+		    	  		    		    var timestamp = Math.floor(Math.random() * maxDate);
+		    	  		    		    document.write(new Date(timestamp).toString().substring(0,24));
+		    	  		    	</script>	
+		    	  		    </p>
+		    	  		  </div>
+		    	  		</div>
+		    	  	</a>
+		    	</div>
 		    </div>
 		  </div>
 		</div>  
-	</div>
+	</section>
+	<footer class="container-fluid bg-custom-black">
+		<div class="container custom-container-padding">
+			<div class="row">
+				<div class="col-lg-6 min-ht-50vh">
+					<div class="d-flex flex-column justify-content-start align-items-start h-100 w-100 pr-lg-150px">
+						<div class="mb-4">
+							<a class="navbar-brand" href="#">
+								<i class="fa-solid fa-trademark fa-2x text-custom-primary-gold"></i> 
+								<span class="brand-logo-text text-white">Logo</span>
+							</a>
+							<p class="footer-common-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam.</p>
+						</div>
+						<div class="d-flex flex-column mb-4">
+							<p class="footer-common-text">Subscribe for updates</p>
+							<form action="">
+								<div class="row">
+								    <div class="col-sm-10 pr-0">
+								      	<input type="email" class="form-control p-1" id="subscriptionEmail">
+								    </div>
+								    <div class="col-sm-2 pl-0">
+								    	<a class="btn bg-dark text-white text-capitalize font-weight-500 subscriptionButton" href="#">subscribe</a>
+								    </div>	
+								</div>
+							</form>
+						</div>
+						<div class="d-flex align-items-center mb-4">
+							<p class="copyright-text">
+								© <span id="currYear"></span> Tradereplay. All Rights Reserved.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 min-ht-50vh">
+					<div class="d-flex justify-content-center align-items-start h-100 w-100">
+						<ul class="list-unstyled">
+						  <li class="">
+							<a href="javascript:void(0)" class="footer-list-heading">Product</a>					  	
+						  </li>	
+						  <li>
+							<a href="javascript:void(0)" class="text-white footer-list-link">Features</a>
+						  </li>
+						  <li>
+							<a href="javascript:void(0)" class="text-white footer-list-link">Pricing</a>
+						  </li>
+						  <li>
+							<a href="javascript:void(0)" class="text-white footer-list-link">Customers</a>
+						  </li>
+						  <li>
+							<a href="javascript:void(0)" class="text-white footer-list-link">Blog</a>
+						  </li>
+						  <li>
+							<a href="javascript:void(0)" class="text-white footer-list-link">Discord</a>
+						  </li>
+						  <li>
+							<a href="javascript:void(0)" class="text-white footer-list-link">Help</a>
+						  </li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="col-lg-2 min-ht-50vh">
+					<div class="d-flex justify-content-center align-items-start h-100 w-100">
+						<ul class="list-unstyled">
+						  <li class="">
+							<a href="javascript:void(0)" class="footer-list-heading">Legal</a>					  	
+						  </li>	
+						  <li>
+							<a href="javascript:void(0)" class="text-white footer-list-link">Refund policy</a>
+						  </li>
+						  <li>
+							<a href="javascript:void(0)" class="text-white footer-list-link">Terms and conditions</a>
+						  </li>
+						  <li>
+							<a href="javascript:void(0)" class="text-white footer-list-link">Privacy policy</a>
+						  </li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="col-lg-2 min-ht-50vh">
+					<div class="row">
+						<a href="javascript:void(0);" class="text-white footer-social-link col-md-4 my-1">
+							<i class="fa-2x fa-brands fa-twitter"></i>
+						</a>
+						<a href="javascript:void(0);" class="text-white footer-social-link col-md-4 my-1">
+							<i class="fa-2x fa-brands fa-facebook"></i>
+						</a>
+						<a href="javascript:void(0);" class="text-white footer-social-link col-md-4 my-1">
+							<i class="fa-2x fa-brands fa-instagram"></i>
+						</a>
+						<a href="javascript:void(0);" class="text-white footer-social-link col-md-4 my-1">
+							<i class="fa-2x fa-brands fa-linkedin"></i>
+						</a>
+						<a href="javascript:void(0);" class="text-white footer-social-link col-md-4 my-1">
+							<i class="fa-2x fa-brands fa-youtube"></i>
+						</a>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script></script>
 
 	<script>
+
+		const d = new Date();
+		let year = d.getFullYear();
+		document.getElementById("currYear").innerHTML = year;
 		// var checkVal = 0;
 
 		//   if(checkVal == 1)
@@ -321,6 +587,48 @@
 		//   else 
 		//       $('#autoStatusCheckbox').attr("checked",false)
 		
+		$(document).ready(function(){
+		  $('.community_slider').slick({
+		    // setting-name: setting-value
+		    lazyLoad: 'ondemand',
+		    slidesToShow: 3,
+		    slidesToScroll: 2,
+		    arrows: false,
+		    centerMode: true,
+		    autoplay: true,
+		    autoplaySpeed: 5000,
+		    responsive: [
+		       {
+		         breakpoint: 1024,
+		         settings: {
+		           slidesToShow: 3,
+		           slidesToScroll: 3,
+		           infinite: true,
+		           dots: true
+		         }
+		       },
+		       {
+		         breakpoint: 600,
+		         settings: {
+		    	   centerMode: false,
+		           slidesToShow: 2,
+		           slidesToScroll: 2
+		         }
+		       },
+		       {
+		         breakpoint: 480,
+		         settings: {
+		    	   centerMode: false,
+		           slidesToShow: 1,
+		           slidesToScroll: 1
+		         }
+		       }
+		    ]   
+		  });
+		});
+
+
+
 	</script>
 </body>
 </html>

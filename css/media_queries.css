@@ -1,0 +1,6 @@
+@media screen and (max-width: 991px){
+	.pr-lg-70px,
+	.pr-lg-150px{
+		padding-right: 0;
+	}
+}
