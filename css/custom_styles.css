@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 7 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root{
@@ -15,7 +22,8 @@
 	padding: 0;
 	border: none;
 	outline: none;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body{
@@ -121,7 +129,11 @@ body{
 	}
 
 	.custom-container-padding {
+		-webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+		transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+		-o-transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 		transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+		transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
 		margin-top: 0px;
 		margin-bottom: 0px;
 		padding: 100px 30px 100px 30px;
@@ -207,6 +219,8 @@ body{
 .btn {
 	padding: 8px 24px !important;
 	border-radius: 3px;
+	-webkit-transition: all 0.3s !important;
+	-o-transition: all 0.3s !important;
 	transition: all 0.3s !important;
 	height: calc(1.5em + .75rem + 2px);
 }
@@ -248,9 +262,15 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	padding: 22px 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .tradereplay-banner-text {
 	
@@ -274,11 +294,20 @@ body{
 
 
 	.tradereplay-header-container{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		padding: 100px 30px 50px 30px;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.tradereplay-header-container > *{
@@ -291,8 +320,10 @@ body{
 		font-style: normal;
 		line-height: 86px;
 		color: transparent;
+		background: -o-linear-gradient(45deg, var(--custom-primary-gold), #CB72FE, #48DEFF 100%);
 		background: linear-gradient(45deg, var(--custom-primary-gold), #CB72FE, #48DEFF 100%);
-		background-clip: text;
+		-webkit-background-clip: text;
+		        background-clip: text;
 		text-align: center;
 		width: 75%;
 		margin-bottom: 20px;
@@ -321,6 +352,7 @@ body{
 		/*display: flex;
 		justify-content: center;
 		align-items: center;*/
+		background: -o-linear-gradient(45deg, var(--custom-primary-gold), #CB72FE, #48DEFF 100%);
 		background: linear-gradient(45deg, var(--custom-primary-gold), #CB72FE, #48DEFF 100%);
 		padding: 1px;
 	}
@@ -347,10 +379,12 @@ body{
 		line-height: 64px;
 		letter-spacing: -0.16px;
 		text-align: justify;
-		text-align-last: center;
+		-moz-text-align-last: center;
+		     text-align-last: center;
 	}
 
 	.founder-statement-img-container{
+		background: -o-linear-gradient(45deg, var(--custom-primary-gold), #CB72FE, #48DEFF 100%);
 		background: linear-gradient(45deg, var(--custom-primary-gold), #CB72FE, #48DEFF 100%);
 		padding: 2px;
 	}
@@ -360,23 +394,35 @@ body{
 /*======= Get Started =================*/
 .get-started-img{
 
-	filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+	-webkit-filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+
+	        filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
 	border-radius: 6px 6px 6px 6px;
-	box-shadow: -1px 0px 50px 3px rgba(248, 209, 16, 0.3);
+	-webkit-box-shadow: -1px 0px 50px 3px rgba(248, 209, 16, 0.3);
+	        box-shadow: -1px 0px 50px 3px rgba(248, 209, 16, 0.3);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: transform 0.3s;
 	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 
 
 .get-started-img:hover{
-	transform: translate(1%,-1%);
+	-webkit-transform: translate(1%,-1%);
+	    -ms-transform: translate(1%,-1%);
+	        transform: translate(1%,-1%);
 }
 
 /*======= Get Started End =============*/
 
 /*======== Community started ==========*/
 	.tradereplay-community-container{
-		flex-direction: column !important;
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		    -ms-flex-direction: column !important;
+		        flex-direction: column !important;
 	}
 
 	.community-section-content-heading{
@@ -389,8 +435,13 @@ body{
 	background-color: #000000;
 	border-radius: 12px;
 	padding: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	border: 1px solid #383838;
 	margin: 10px 15px;
 }
@@ -485,8 +536,11 @@ body{
 }
 .footer-social-link .fa-instagram:hover{
 	color: transparent;
+	background: -webkit-gradient(linear, left top, right top, from(#c32aa3),color-stop(#4c5fd7),color-stop(#7232bd),color-stop(#f46f30),to(#ffdc7d));
+	background: -o-linear-gradient(left, #c32aa3,#4c5fd7,#7232bd,#f46f30,#ffdc7d);
 	background: linear-gradient(to right, #c32aa3,#4c5fd7,#7232bd,#f46f30,#ffdc7d);
-	background-clip: text !important;
+	-webkit-background-clip: text !important;
+	        background-clip: text !important;
 }
 
 /*========== Footer Ends==============*/
